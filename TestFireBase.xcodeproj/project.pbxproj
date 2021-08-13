@@ -3,23 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5247BBA126C61CE9007E5623 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247BBA026C61CE9007E5623 /* MainView.swift */; };
+		5247BBA326C61CF8007E5623 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247BBA226C61CF8007E5623 /* LoginView.swift */; };
+		5247BBA526C61CFF007E5623 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247BBA426C61CFF007E5623 /* HomeView.swift */; };
+		5247BBA726C61F58007E5623 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247BBA626C61F58007E5623 /* User.swift */; };
 		529FBAB126C619DD009205BB /* TestFireBaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FBAB026C619DD009205BB /* TestFireBaseApp.swift */; };
-		529FBAB326C619DD009205BB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529FBAB226C619DD009205BB /* ContentView.swift */; };
 		529FBAB526C619E1009205BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529FBAB426C619E1009205BB /* Assets.xcassets */; };
 		529FBAB826C619E1009205BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529FBAB726C619E1009205BB /* Preview Assets.xcassets */; };
+		529FBAC026C61AF8009205BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 529FBABF26C61AF8009205BB /* GoogleService-Info.plist */; };
+		5E3D3D0B646688CB85D92D3B /* Pods_TestFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368A37B00F9DA4770AB859D0 /* Pods_TestFireBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04B9AFD10030E95C4C46664B /* Pods-TestFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFireBase.release.xcconfig"; path = "Target Support Files/Pods-TestFireBase/Pods-TestFireBase.release.xcconfig"; sourceTree = "<group>"; };
+		368A37B00F9DA4770AB859D0 /* Pods_TestFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5247BBA026C61CE9007E5623 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5247BBA226C61CF8007E5623 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		5247BBA426C61CFF007E5623 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		5247BBA626C61F58007E5623 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		529FBAAD26C619DD009205BB /* TestFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529FBAB026C619DD009205BB /* TestFireBaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestFireBaseApp.swift; sourceTree = "<group>"; };
-		529FBAB226C619DD009205BB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		529FBAB426C619E1009205BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		529FBAB726C619E1009205BB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		529FBAB926C619E1009205BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		529FBABF26C61AF8009205BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BF3358B6AA7AC93BF09B0F86 /* Pods-TestFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestFireBase.debug.xcconfig"; path = "Target Support Files/Pods-TestFireBase/Pods-TestFireBase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3D3D0B646688CB85D92D3B /* Pods_TestFireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +51,8 @@
 			children = (
 				529FBAAF26C619DD009205BB /* TestFireBase */,
 				529FBAAE26C619DD009205BB /* Products */,
+				63F78AB9D8F28AA260BFD2D6 /* Pods */,
+				F75781DC0BD76B24BECDDC78 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,9 +68,13 @@
 			isa = PBXGroup;
 			children = (
 				529FBAB026C619DD009205BB /* TestFireBaseApp.swift */,
-				529FBAB226C619DD009205BB /* ContentView.swift */,
+				5247BBA026C61CE9007E5623 /* MainView.swift */,
+				5247BBA226C61CF8007E5623 /* LoginView.swift */,
+				5247BBA426C61CFF007E5623 /* HomeView.swift */,
+				5247BBA626C61F58007E5623 /* User.swift */,
 				529FBAB426C619E1009205BB /* Assets.xcassets */,
 				529FBAB926C619E1009205BB /* Info.plist */,
+				529FBABF26C61AF8009205BB /* GoogleService-Info.plist */,
 				529FBAB626C619E1009205BB /* Preview Content */,
 			);
 			path = TestFireBase;
@@ -69,6 +88,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		63F78AB9D8F28AA260BFD2D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF3358B6AA7AC93BF09B0F86 /* Pods-TestFireBase.debug.xcconfig */,
+				04B9AFD10030E95C4C46664B /* Pods-TestFireBase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F75781DC0BD76B24BECDDC78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				368A37B00F9DA4770AB859D0 /* Pods_TestFireBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -76,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 529FBABC26C619E1009205BB /* Build configuration list for PBXNativeTarget "TestFireBase" */;
 			buildPhases = (
+				178FF4F5A310B3F4C9B3BAE1 /* [CP] Check Pods Manifest.lock */,
 				529FBAA926C619DD009205BB /* Sources */,
 				529FBAAA26C619DD009205BB /* Frameworks */,
 				529FBAAB26C619DD009205BB /* Resources */,
+				01B8F8AF371F1AA715D860F1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,18 +166,64 @@
 			files = (
 				529FBAB826C619E1009205BB /* Preview Assets.xcassets in Resources */,
 				529FBAB526C619E1009205BB /* Assets.xcassets in Resources */,
+				529FBAC026C61AF8009205BB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01B8F8AF371F1AA715D860F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TestFireBase/Pods-TestFireBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		178FF4F5A310B3F4C9B3BAE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TestFireBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		529FBAA926C619DD009205BB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				529FBAB326C619DD009205BB /* ContentView.swift in Sources */,
+				5247BBA326C61CF8007E5623 /* LoginView.swift in Sources */,
+				5247BBA526C61CFF007E5623 /* HomeView.swift in Sources */,
 				529FBAB126C619DD009205BB /* TestFireBaseApp.swift in Sources */,
+				5247BBA726C61F58007E5623 /* User.swift in Sources */,
+				5247BBA126C61CE9007E5623 /* MainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +348,7 @@
 		};
 		529FBABD26C619E1009205BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF3358B6AA7AC93BF09B0F86 /* Pods-TestFireBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -286,6 +371,7 @@
 		};
 		529FBABE26C619E1009205BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04B9AFD10030E95C4C46664B /* Pods-TestFireBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
