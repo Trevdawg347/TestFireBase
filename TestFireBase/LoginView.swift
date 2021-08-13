@@ -40,6 +40,7 @@ struct CreateAccount: View {
             TextField("Last Name", text: $lastName)
             TextField("Email", text: $email)
             SecureField("Password", text: $password)
+            Button("Create Account") { }
         }
     }
 }

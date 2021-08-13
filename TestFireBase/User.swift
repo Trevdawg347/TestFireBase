@@ -8,8 +8,19 @@
 import Foundation
 
 class User: ObservableObject {
+    
     @Published var id = ""
-    @Published var signedIn = Bool()
     @Published var name = ""
-    @Published var username = ""
+    @Published var username = ""    
+    @Published var signedIn = Bool()
+    
+    func signIn() {
+        
+    }
+    func createAccount() {
+        
+    }
+    func setUp() {
+        
+    }
 }
