@@ -7,9 +7,13 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 @main
 struct TestFireBaseApp: App {
+    
+    @StateObject var user = User()
+    
     
     init() {
         FirebaseApp.configure()
@@ -18,7 +22,17 @@ struct TestFireBaseApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()
-                .environmentObject(User())
+                .onAppear() {
+                    if Auth.auth().currentUser != nil {
+                        user.signedIn = true
+                    }
+                    Auth.auth().addStateDidChangeListener { auth, users in
+                        if users != nil {
+                            user.setUp()
+                        }
+                    }
+                }
+                .environmentObject(user)
         }
     }
 }

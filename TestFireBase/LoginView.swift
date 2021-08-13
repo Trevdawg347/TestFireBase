@@ -27,11 +27,11 @@ struct LoginView: View {
 
 struct CreateAccount: View {
     
-    @State var username: String = ""
-    @State var firstName: String = ""
-    @State var lastName: String = ""
-    @State var email: String = ""
-    @State var password: String = ""
+    @State var username: String = "Trev"
+    @State var firstName: String = "Trevor"
+    @State var lastName: String = "Buhler"
+    @State var email: String = "Trevor@gmail.com"
+    @State var password: String = "Jeremy12"
     @EnvironmentObject var user: User
 
     
@@ -42,7 +42,7 @@ struct CreateAccount: View {
             TextField("Last Name", text: $lastName)
             TextField("Email", text: $email)
             SecureField("Password", text: $password)
-            Button("Create Account") {user.createAccount(email: email, password: password)}
+            Button("Create Account") { user.createAccount(email: email, password: password, name: "\(firstName) \(lastName)", userName: username)}
         }
     }
 }
