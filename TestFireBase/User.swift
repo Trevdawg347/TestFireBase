@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import Firebase
+import FirebaseAuth
 
 class User: ObservableObject {
     
@@ -14,11 +16,19 @@ class User: ObservableObject {
     @Published var username = ""    
     @Published var signedIn = Bool()
     
-    func signIn() {
-        
+    func signIn(email:String, password:String) {
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
+            if error == nil && result != nil {
+                self.setUp()
+            }
+        }
     }
-    func createAccount() {
-        
+    func createAccount(email:String, password:String) {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if error == nil && result != nil {
+                self.setUp()
+            }
+        }
     }
     func setUp() {
         

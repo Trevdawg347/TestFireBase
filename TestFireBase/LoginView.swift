@@ -9,15 +9,16 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var username: String = ""
+    @State var email: String = ""
     @State var password: String = ""
+    @EnvironmentObject var user: User
     
     var body: some View {
         NavigationView {
             Form {
-                TextField("Username", text: $username)
+                TextField("Email", text: $email)
                 SecureField("Password", text: $password)
-                Button("Login") { }
+                Button("Login") {user.signIn(email: email, password: password) }
                 NavigationLink("Create Account", destination: CreateAccount())
             }
         }
@@ -48,5 +49,6 @@ struct CreateAccount: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .environmentObject(User())
     }
 }
