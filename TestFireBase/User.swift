@@ -18,16 +18,12 @@ class User: ObservableObject {
     
     func signIn(email:String, password:String) {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
-            if error == nil && result != nil {
-                self.setUp()
-            }
+            if error == nil && result != nil {}
         }
     }
     func createAccount(email:String, password:String) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            if error == nil && result != nil {
-                self.setUp()
-            }
+            if error == nil && result != nil {}
         }
     }
     func setUp() {

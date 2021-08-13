@@ -32,6 +32,7 @@ struct CreateAccount: View {
     @State var lastName: String = ""
     @State var email: String = ""
     @State var password: String = ""
+    @EnvironmentObject var user: User
 
     
     var body: some View {
@@ -41,7 +42,7 @@ struct CreateAccount: View {
             TextField("Last Name", text: $lastName)
             TextField("Email", text: $email)
             SecureField("Password", text: $password)
-            Button("Create Account") { }
+            Button("Create Account") {user.createAccount(email: email, password: password)}
         }
     }
 }
