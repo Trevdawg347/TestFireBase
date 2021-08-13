@@ -16,12 +16,9 @@ struct LoginView: View {
         NavigationView {
             Form {
                 TextField("Username", text: $username)
-                SecureField("password", text: $password)
-                Button("Login") {
-                    
-                }
+                SecureField("Password", text: $password)
+                Button("Login") { }
                 NavigationLink("Create Account", destination: CreateAccount())
-                    
             }
         }
     }
@@ -30,16 +27,19 @@ struct LoginView: View {
 struct CreateAccount: View {
     
     @State var username: String = ""
-    @State var password: String = ""
     @State var firstName: String = ""
     @State var lastName: String = ""
+    @State var email: String = ""
+    @State var password: String = ""
+
     
     var body: some View {
         Form {
             TextField("Username", text: $username)
-            SecureField("password", text: $password)
             TextField("First Name", text: $firstName)
             TextField("Last Name", text: $lastName)
+            TextField("Email", text: $email)
+            SecureField("Password", text: $password)
         }
     }
 }
